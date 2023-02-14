@@ -12,6 +12,7 @@ public class Chef {
 		this.force = force;
 		this.effetPotion = effetPotion;
 		this.village = village;
+		village.setChef(this);
 	}
 	
 	public String getNom() {
