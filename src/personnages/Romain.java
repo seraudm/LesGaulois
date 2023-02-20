@@ -33,6 +33,14 @@ public class Romain {
 		} else {
 			parler("J'abandonne...");
 		}
-
+		
+	}
+	
+	public static void main(String[] args) {
+		Romain minus = new Romain("minus", 8);
+		System.out.println(minus.prendreParole());
+		minus.parler("Les gogo les gogo les gaulois");
+		minus.recevoirCoup(4);
+		minus.recevoirCoup(7);
 	}
 }
