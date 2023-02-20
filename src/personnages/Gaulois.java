@@ -24,7 +24,7 @@ public class Gaulois {
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println(this.nom + "envoie un grand coup dans la machoire de " + romain.getNom());
+		System.out.println(this.nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(this.force / 3);
 	}
 
@@ -35,6 +35,10 @@ public class Gaulois {
 	
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 8);
-		System.out.println(asterix);
+		System.out.println(asterix.getNom());
+		asterix.parler("Je suis un gaulois");
+		System.out.println(asterix.prendreParole());
+		Romain minus = new Romain("Minus", 10);
+		asterix.frapper(minus);
 	}
 }
