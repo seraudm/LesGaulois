@@ -20,20 +20,21 @@ public class Gaulois {
 	}
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole()+"«"+ texte + "»");
+		System.out.println(prendreParole()+"Â«"+ texte + "Â»");
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println(this.nom + "envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(this.nom + "envoie un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(this.force / 3);
 	}
 
-	@Override
+//	@Override
 //	public String toString() {
 //		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 //	}
 	
 	public static void main(String[] args) {
-		asterix = Gaulois("Astérix", 8);
+		Gaulois asterix = new Gaulois("Asterix", 8);
+		System.out.println(asterix);
 	}
 }
