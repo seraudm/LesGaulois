@@ -31,13 +31,20 @@ public class Druide {
 	}
 	public void preparerPotion() {
 		Random objet = new Random();
-		while (forcePotion < this.effetPotionMin) {
-			forcePotion = objet.nextInt(this.effetPotionMax + 1);
-		}
+		forcePotion = objet.nextInt(this.effetPotionMax - this.effetPotionMin + 1) + this.effetPotionMin;
 		if (forcePotion > 7) {
 			parler("J'ai prepare une super potion de force" + Integer.toString(this.forcePotion));
 		} else {
-			parler("Je n'ai pas trouve tous les ingredients, ma potion est seulement de force" + Integer.toString(this.forcePotion));
+			parler("Je n'ai pas trouve tous les ingredients, ma potion est seulement de force" + this.forcePotion);
+		}
+	}
+	
+	public void booster(Gaulois gaulois) {
+		if (gaulois.getNom() == "Obelix"){
+			System.out.println("Non, Obelix ! Tu n'auras pas de potion magique !");;
+		}
+		else {
+			gaulois.boirePotion(forcePotion);
 		}
 	}
 	
