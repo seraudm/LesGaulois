@@ -30,12 +30,12 @@ public class Gaulois {
 	
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
-		System.out.println("Merci Druide, je sens que ma force est " + effetPotion + " fois décuplée.");
+		this.parler("Merci Druide, je sens que ma force est " + effetPotion + " fois décuplée.");
 	}
-//	@Override
-//	public String toString() {
-//		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+	}
 	
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 8);

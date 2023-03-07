@@ -13,7 +13,7 @@ public class Druide {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		parler("Bonjour, je suis le druide" + this.nom +"et ma potion peut aller d'une force de" + this.effetPotionMin + "à" + this.effetPotionMax + ".");
+		parler("Bonjour, je suis le druide " + this.nom +" et ma potion peut aller d'une force de" + this.effetPotionMin + "à" + this.effetPotionMax + ".");
 		
 	}
 	
