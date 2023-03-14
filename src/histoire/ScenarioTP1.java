@@ -4,7 +4,7 @@ import personnages.Druide;
 import personnages.Gaulois;
 import personnages.Romain;
 
-public class Scenario {
+public class ScenarioTP1 {
 
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8);
