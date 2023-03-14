@@ -95,11 +95,9 @@ public class Romain {
 	private Equipement[] ejecterEquipement() {
 		Equipement[] equipementEjecte = new Equipement[nbEquipement];
 		System.out.println("L'équipement de " + nom + " s'envole sous la force du coup.");
-		int nbEquipementEjecte = 0;
 		for (int i = 0; i < nbEquipement; i++) {
 			if (equipements[i] != null) {
-				equipementEjecte[nbEquipementEjecte] = equipements[i];
-				nbEquipementEjecte++;
+				equipementEjecte[i] = equipements[i];
 				equipements[i] = null;
 			}
 		}

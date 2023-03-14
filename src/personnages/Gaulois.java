@@ -55,7 +55,7 @@ public class Gaulois {
 	
 	public void faireUneDonnation(Musee musee) {
 		while (nbTrophees>0) {
-			musee.donnerTrophees(this, this.trophees[nbTrophees]);
+			musee.donnerTrophees(this, this.trophees[nbTrophees-1]);
 			nbTrophees--;
 		}
 	}
